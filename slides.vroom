@@ -9,8 +9,8 @@
 # Basic config options.
 title: Vim tutorial
 indent: 5
-height: 18
-width: 69
+height: 29
+width: 100
 #auto_size: 1
 skip: 0
 
@@ -33,9 +33,9 @@ ichi
 
 * Why vim
 * Introduction
-  +* Normal mode
-  +* Insert mode
-  +* Visual mode
+  * Normal mode
+  * Insert mode
+  * Visual mode
 * 組合指令
 * Advance
 * Settings
@@ -43,52 +43,110 @@ ichi
 ----
 == Why vim
 
-* 
-  * 
-* 
-* 
-
 ----
 == Normal mode
 
-* insert
-* delete
-* move
+* esc
+* command (:...)
+  * :h
+  * :w
+  * :q
+  * :q!
+  * :wq
+  * :e
+* map
+  * nmap
+    * dd
+    * yy
+    * p
+    * /
+    * u: undo, <c-r>: redo
+  * vmap
+  * imap
 
 ----
 == Insert mode
 
+* i - insert before cursor
+* a - insert after cursor
+* o - insert next line
+* O - insert previous line
+
 ----
 == Visual mode
 
-* visual
-* visual line
-* visual block
+* v - visual
+* <s-h> - visual line
+* <c-h> - visual block
 
 ----
 == 組合指令
 
-* 
+* (command)(range)(type)
+  * command - c, v, d
+  * range - i, a
+  * type - ', ", [, (, {, w, t, p
+==> ex: ciw, va[
+
+----
+== Move & Marks
+
+* hjkl
+* w, b
+* <c-f>, <c-b>
+* gg, <s-g>
+* ^, $
+* m{a-zA-Z}, '{a-zA-Z}
 
 ----
 == Replace
 
-* 
+* r
+* :s/abc/def/g
 
 ----
 == Split & multiple window
 
-* 
+* split
+  * :sp
+  * :vsp
+* <c-w>
+  * hjkl
+  * _
+  * |
+  * =
 
 ----
 == Search
 
-* 
+* /
+  * n
+  * <s-n>
+* *
+* :g
+  * / 
+  * *
 
 ----
 == Grep
 
-* 
+* vimgrep
+  * copen
+  * cclose
+
+----
+== Record
+
+* q{0-9a-zA-Z"} - record start
+* q - record stop
+* @{0-9a-zA-Z".=*} - execute record
+
+----
+== Register
+
+* :reg
+* "(reg)p
+  * ex: "0p
 
 ----
 == Plugins
@@ -96,15 +154,18 @@ ichi
 * vundle
 +* theme
 +* syntax lint & hightlight
-+* status
++* vim-powerline
 +* NERDTree
 +* CommandT
++* nerdcommenter
 +* vim-smalls
 +* vim-surround
 +* switch
++* vim-visual-increment
 +* emmet
 +* autocomplete
-  +*
+  * ctag
+  * vim-autocomplpop
 
 ----
 == The End

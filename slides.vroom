@@ -1,0 +1,110 @@
+# This is a sample Vroom input file. It should help you get started.
+#
+# Edit this file with your content. Then run `vroom --vroom` to start
+# the show!
+#
+# See `perldoc Vroom` for complete details.
+#
+---- config
+# Basic config options.
+title: Vim tutorial
+indent: 5
+height: 18
+width: 69
+#auto_size: 1
+skip: 0
+
+# The following options are for Gvim usage.
+# vim: gvim
+# gvimrc: |
+#   set fuopt=maxhorz,maxvert
+#   set guioptions=egmLtT
+#   set guifont=Bitstream_Vera_Sans_Mono:h18
+#   set guicursor=a:blinkon0-ver25-Cursor
+#   colorscheme default
+
+---- center
+Vim tutorial
+
+ichi
+
+----
+== Agenda
+
+* Why vim
+* Introduction
+  +* Normal mode
+  +* Insert mode
+  +* Visual mode
+* 組合指令
+* Advance
+* Settings
+
+----
+== Why vim
+
+* 
+  * 
+* 
+* 
+
+----
+== Normal mode
+
+* insert
+* delete
+* move
+
+----
+== Insert mode
+
+----
+== Visual mode
+
+* visual
+* visual line
+* visual block
+
+----
+== 組合指令
+
+* 
+
+----
+== Replace
+
+* 
+
+----
+== Split & multiple window
+
+* 
+
+----
+== Search
+
+* 
+
+----
+== Grep
+
+* 
+
+----
+== Plugins
+
+* vundle
++* theme
++* syntax lint & hightlight
++* status
++* NERDTree
++* CommandT
++* vim-smalls
++* vim-surround
++* switch
++* emmet
++* autocomplete
+  +*
+
+----
+== The End

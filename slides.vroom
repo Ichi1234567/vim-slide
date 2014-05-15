@@ -24,7 +24,7 @@ skip: 0
 #   colorscheme default
 
 ---- center
-Vim tutorial
+Vim 初心者
 
 ichi
 
@@ -36,7 +36,6 @@ ichi
   * Normal mode
   * Insert mode
   * Visual mode
-* 組合指令
 * Advance
 * Settings
 
@@ -80,7 +79,7 @@ ichi
 * <c-h> - visual block
 
 ----
-== 組合指令
+== Advance
 
 * (command)(range)(type)
   * command - c, v, d
@@ -88,21 +87,27 @@ ichi
   * type - ', ", [, (, {, w, t, p
 ==> ex: ciw, va[
 
+* (數字)(command)
+  * command - dd, yy, p, w, j, k...
+==> ex: 3dd
+
 ----
 == Move & Marks
 
 * hjkl
 * w, b
-* <c-f>, <c-b>
+* <c-f>, <c-b>, <c-u>, <c-d>
 * gg, <s-g>
 * ^, $
 * m{a-zA-Z}, '{a-zA-Z}
+* :123
 
 ----
 == Replace
 
 * r
 * :s/abc/def/g
+* :13,25 s/abc/def/g
 
 ----
 == Split & multiple window
@@ -119,6 +124,7 @@ ichi
 ----
 == Search
 
+* f, F, t, T
 * /
   * n
   * <s-n>
@@ -151,21 +157,34 @@ ichi
 ----
 == Plugins
 
-* vundle
+* plugin manager:
+  * vundle (https://github.com/gmarik/Vundle.vim)
+  * pathogen (https://github.com/tpope/vim-pathogen) 
 +* theme
 +* syntax lint & hightlight
-+* vim-powerline
-+* NERDTree
-+* CommandT
-+* nerdcommenter
-+* vim-smalls
-+* vim-surround
-+* switch
-+* vim-visual-increment
-+* emmet
++* vim-powerline (https://github.com/Lokaltog/vim-powerline)
++* NERDTree (https://github.com/scrooloose/nerdtree)
++* ctrlp (https://github.com/kien/ctrlp.vim)
++* nerdcommenter (https://github.com/scrooloose/nerdcommenter)
++* vim-smalls (https://github.com/t9md/vim-smalls)
++* vim-surround (https://github.com/tpope/vim-surround)
++* switch (https://github.com/AndrewRadev/switch.vim)
++* vim-visual-increment (https://github.com/triglav/vim-visual-increment)
++* emmet (https://github.com/mattn/emmet-vim)
++* snipmate (https://github.com/garbas/vim-snipmate)
 +* autocomplete
   * ctag
   * vim-autocomplpop
 
 ----
 == The End
+
+----
+
+* manual
+  * 大家來學VIM (http://www.study-area.org/tips/vim/index.html)
+  * http://vim.wikia.com/wiki/Special:WikiActivity
+  * http://www.cs.swarthmore.edu/help/vim/home.html
+* plugins:
+  * http://vim-scripts.org/vim/scripts.html
+

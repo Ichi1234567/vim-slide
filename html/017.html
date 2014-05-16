@@ -8,7 +8,11 @@ function navigate(e) {
         ? e.keyCode
         : e.which;
     if (keynum == 8) {
-        window.location = "016" + ".html";
+        window.location = "016z" + ".html";
+        return false;
+    }
+    if (keynum == 13 || keynum == 32) {
+        window.location = "018" + ".html";
         return false;
     }
     if (keynum == 73 || keynum == 105) {
@@ -27,19 +31,7 @@ function navigate(e) {
 
 
 
-
-
-
-     * manual
-       * 大家來學VIM (http://www.study-area.org/tips/vim/index.html)
-       * http://vim.wikia.com/wiki/Special:WikiActivity
-       * http://www.cs.swarthmore.edu/help/vim/home.html
-     * plugins:
-       * http://vim-scripts.org/vim/scripts.html
-
-
-
-
+                            The End
 
 
 

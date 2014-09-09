@@ -74,7 +74,7 @@ vimrc: |
 
 
 ---- center
-Vim 初心者
+Vim Rock
 
   ichi
 
@@ -96,6 +96,21 @@ Vim 初心者
 
 ----
 == Why vim
+
+----
+== Introduction
+
+* 3 general modes
+  * Normal mode
+  * Insert mode
+  * Visual mode
+* 6 operation
+  * return Normal mode
+  * edit
+  * redo
+  * undo
+  * save
+  * quit
 
 ----
 == Normal mode
@@ -125,6 +140,15 @@ Vim 初心者
 * a - insert after cursor
 * o - insert next line
 * O - insert previous line
+
+----
+== Special keys
+
+* shift
+* ctrl
+* space
+* tab
+* leader
 
 ----
 == Visual mode
@@ -161,8 +185,9 @@ Vim 初心者
 == Replace
 
 * r
-* :s/abc/def/g
-* :13,25 s/abc/def/g
+* R
+* :[range]s/abc/def/g
+  * :13,25 s/abc/def/g
 
 ----
 == Split & multiple window
@@ -194,20 +219,6 @@ Vim 初心者
 * vimgrep
   * copen
   * cclose
-
-----
-== Record
-
-* q{0-9a-zA-Z"} - record start
-* q - record stop
-* @{0-9a-zA-Z".=*} - execute record
-
-----
-== Register
-
-* :reg
-* "(reg)p
-  * ex: "0p
 
 ----
 == Plugins

@@ -137,7 +137,9 @@ Vim Rock
 == Insert mode
 
 * i - insert before cursor
+* I - insert at the start
 * a - insert after cursor
+* A - insert at the end
 * o - insert next line
 * O - insert previous line
 
